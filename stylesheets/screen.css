@@ -247,20 +247,11 @@ header {
 @media screen and (max-width: 650px) {
   /* line 124, ../sass/screen.sass */
   .post-wrapper .desc-wrapper .desc-subtitle:not(:empty) {
-    font-size: 16px;
-    float: left;
-    margin-top: 0px;
-    margin-left: 5px;
-  }
-}
-@media screen and (max-width: 400px) {
-  /* line 124, ../sass/screen.sass */
-  .post-wrapper .desc-wrapper .desc-subtitle:not(:empty) {
     display: none;
   }
 }
 
-/* line 141, ../sass/screen.sass */
+/* line 136, ../sass/screen.sass */
 #footer-wrapper .copyright {
   font-size: 12px;
   font-style: italic;
