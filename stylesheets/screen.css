@@ -69,8 +69,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face {
   font-family: "coolvetica";
-  src: url('/soundsofpolaris/assets/fonts/coolvetica.woff?1456465350');
-  src: url('/soundsofpolaris/assets/fonts/coolvetica.woff?&1456465350#iefix') format('embedded-opentype'), url('/soundsofpolaris/assets/fonts/coolvetica.ttf?1456465350') format('truetype'), url('/soundsofpolaris/assets/fonts/coolvetica.eot?1456465350') format('embedded-opentype'), url('/soundsofpolaris/assets/fonts/coolvetica.svg?1456465350') format('svg');
+  src: url('../assets/fonts/coolvetica.woff?1456465350');
+  src: url('../assets/fonts/coolvetica.woff?&1456465350#iefix') format('embedded-opentype'), url('../assets/fonts/coolvetica.ttf?1456465350') format('truetype'), url('../assets/fonts/coolvetica.eot?1456465350') format('embedded-opentype'), url('../assets/fonts/coolvetica.svg?1456465350') format('svg');
   font-weight: "coolvetica.otf";
 }
 /* line 26, ../sass/screen.sass */
