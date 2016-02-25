@@ -1,0 +1,144 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+//////////////////////////////
+// Config
+//////////////////////////////
+
+@import compass/reset
+@import compass/css3
+
+$tablet-breakpoint: 1032px
+$phone-breakpoint: 650px
+$min-breakpoint: 400px
+
+$phone-font: 16px
+
++font-face("coolvetica", font-files("coolvetica.ttf"))
+
+//////////////////////////////
+// Global Classes
+//////////////////////////////
+
+.center
+	margin: 0 auto
+	width: 1024px
+	@media screen and (max-width: $tablet-breakpoint)
+		width: 100%
+
+//////////////////////////////
+// Styles
+//////////////////////////////
+body
+	font-family: Sans-Serif
+
+header
+	font-family: "coolvetica"
+	margin-bottom: 20px
+
+#social-wrapper
+	text-align: right
+	.social-link
+		background: grey
+		height: 50px                    
+		width:  50px
+		text-indent: -9999px
+		white-space: nowrap
+		overflow: hidden
+		outline: none
+		display: inline-block
+
+#header-wrapper
+	.header-title
+		text-align: center
+		display: block
+		width: 100%
+	.header-desc 
+		text-align: right
+		display: block
+		padding-right: 15px
+		@media screen and (min-width: $tablet-breakpoint)
+			width: 1024px
+			margin: 0 auto
+		@media screen and (max-width: $phone-breakpoint)
+			text-align: center
+			padding-right: 0
+
+.post-wrapper
+	position: relative
+	width: 100%
+	margin-bottom: 20px
+	.post-background
+		max-width: 100%
+		+box-shadow(rgba(black, 0.6) 0 0 6px)
+	.date-wrapper
+		position: absolute
+		right: 50px
+		top: 0
+		padding: 20px
+		background: rgba(0, 0, 0, 0.6)
+		color: #fefefe
+		@media screen and (max-width: $phone-breakpoint)
+			right: 10px
+			padding: 10px
+		.date-month
+			font-size: 25px
+			@media screen and (max-width: $phone-breakpoint)
+				font-size: $phone-font
+				float: left
+				padding-right: 5px
+		.date-year
+			font-size: 19px
+			@media screen and (max-width: $phone-breakpoint)
+				font-size: $phone-font
+				float: right
+	.desc-wrapper
+		position: absolute
+		left: -10px
+		bottom: 20px
+		padding: 20px
+		width: auto
+		max-width: 75%
+		background: rgba(0, 0, 0, 0.6)
+		color: #fefefe 	
+		@media screen and (max-width: $phone-breakpoint)
+			left: 0
+			bottom: 10px
+			padding: 10px
+		@media screen and (max-width: $min-breakpoint)
+			bottom: 3px
+			max-width: 100%
+		.desc-title	
+			font-size: 30px
+			overflow: hidden
+			white-space: nowrap
+			text-overflow: ellipsis   
+			-o-text-overflow: ellipsis
+			@media screen and (max-width: $phone-breakpoint)
+				font-size: $phone-font
+				float: left
+				font-weight: bold
+		.desc-subtitle:not(:empty)
+			font-size: 19px
+			margin-left: 20px
+			margin-top: 5px
+			width: 100%
+			overflow: hidden
+			white-space: nowrap
+			text-overflow: ellipsis   
+			-o-text-overflow: ellipsis
+			@media screen and (max-width: $phone-breakpoint)
+				font-size: $phone-font
+				float: left
+				margin-top: 0px
+				margin-left: 5px
+			@media screen and (max-width: $min-breakpoint)
+				display: none
+#footer-wrapper
+	.copyright
+		font-size: 12px
+		font-style: italic
+		text-align: center

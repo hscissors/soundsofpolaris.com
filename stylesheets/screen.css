@@ -1,0 +1,266 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../home/harold/.rvm/gems/ruby-2.0.0-p643@soundsofpolaris/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../home/harold/.rvm/gems/ruby-2.0.0-p643@soundsofpolaris/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../home/harold/.rvm/gems/ruby-2.0.0-p643@soundsofpolaris/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../home/harold/.rvm/gems/ruby-2.0.0-p643@soundsofpolaris/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../home/harold/.rvm/gems/ruby-2.0.0-p643@soundsofpolaris/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../home/harold/.rvm/gems/ruby-2.0.0-p643@soundsofpolaris/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../home/harold/.rvm/gems/ruby-2.0.0-p643@soundsofpolaris/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../home/harold/.rvm/gems/ruby-2.0.0-p643@soundsofpolaris/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../home/harold/.rvm/gems/ruby-2.0.0-p643@soundsofpolaris/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "coolvetica";
+  src: url('/soundsofpolaris/assets/fonts/coolvetica.ttf') format('truetype');
+}
+/* line 26, ../sass/screen.sass */
+.center {
+  margin: 0 auto;
+  width: 1024px;
+}
+@media screen and (max-width: 1032px) {
+  /* line 26, ../sass/screen.sass */
+  .center {
+    width: 100%;
+  }
+}
+
+/* line 35, ../sass/screen.sass */
+body {
+  font-family: Sans-Serif;
+}
+
+/* line 38, ../sass/screen.sass */
+header {
+  font-family: "coolvetica";
+  margin-bottom: 20px;
+}
+
+/* line 42, ../sass/screen.sass */
+#social-wrapper {
+  text-align: right;
+}
+/* line 44, ../sass/screen.sass */
+#social-wrapper .social-link {
+  background: grey;
+  height: 50px;
+  width: 50px;
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: none;
+  display: inline-block;
+}
+
+/* line 55, ../sass/screen.sass */
+#header-wrapper .header-title {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+/* line 59, ../sass/screen.sass */
+#header-wrapper .header-desc {
+  text-align: right;
+  display: block;
+  padding-right: 15px;
+}
+@media screen and (min-width: 1032px) {
+  /* line 59, ../sass/screen.sass */
+  #header-wrapper .header-desc {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* line 59, ../sass/screen.sass */
+  #header-wrapper .header-desc {
+    text-align: center;
+    padding-right: 0;
+  }
+}
+
+/* line 70, ../sass/screen.sass */
+.post-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* line 74, ../sass/screen.sass */
+.post-wrapper .post-background {
+  max-width: 100%;
+  -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 0 6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0 6px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 0 6px;
+}
+/* line 77, ../sass/screen.sass */
+.post-wrapper .date-wrapper {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fefefe;
+}
+@media screen and (max-width: 650px) {
+  /* line 77, ../sass/screen.sass */
+  .post-wrapper .date-wrapper {
+    right: 10px;
+    padding: 10px;
+  }
+}
+/* line 87, ../sass/screen.sass */
+.post-wrapper .date-wrapper .date-month {
+  font-size: 25px;
+}
+@media screen and (max-width: 650px) {
+  /* line 87, ../sass/screen.sass */
+  .post-wrapper .date-wrapper .date-month {
+    font-size: 16px;
+    float: left;
+    padding-right: 5px;
+  }
+}
+/* line 93, ../sass/screen.sass */
+.post-wrapper .date-wrapper .date-year {
+  font-size: 19px;
+}
+@media screen and (max-width: 650px) {
+  /* line 93, ../sass/screen.sass */
+  .post-wrapper .date-wrapper .date-year {
+    font-size: 16px;
+    float: right;
+  }
+}
+/* line 98, ../sass/screen.sass */
+.post-wrapper .desc-wrapper {
+  position: absolute;
+  left: -10px;
+  bottom: 20px;
+  padding: 20px;
+  width: auto;
+  max-width: 75%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fefefe;
+}
+@media screen and (max-width: 650px) {
+  /* line 98, ../sass/screen.sass */
+  .post-wrapper .desc-wrapper {
+    left: 0;
+    bottom: 10px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 98, ../sass/screen.sass */
+  .post-wrapper .desc-wrapper {
+    bottom: 3px;
+    max-width: 100%;
+  }
+}
+/* line 114, ../sass/screen.sass */
+.post-wrapper .desc-wrapper .desc-title {
+  font-size: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+@media screen and (max-width: 650px) {
+  /* line 114, ../sass/screen.sass */
+  .post-wrapper .desc-wrapper .desc-title {
+    font-size: 16px;
+    float: left;
+    font-weight: bold;
+  }
+}
+/* line 124, ../sass/screen.sass */
+.post-wrapper .desc-wrapper .desc-subtitle:not(:empty) {
+  font-size: 19px;
+  margin-left: 20px;
+  margin-top: 5px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+@media screen and (max-width: 650px) {
+  /* line 124, ../sass/screen.sass */
+  .post-wrapper .desc-wrapper .desc-subtitle:not(:empty) {
+    font-size: 16px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 124, ../sass/screen.sass */
+  .post-wrapper .desc-wrapper .desc-subtitle:not(:empty) {
+    display: none;
+  }
+}
+
+/* line 141, ../sass/screen.sass */
+#footer-wrapper .copyright {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
