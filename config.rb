@@ -2,12 +2,12 @@ require 'compass/import-once/activate'
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
-http_path = "/"
+http_path = "/soundsofpolaris"
 css_dir = "stylesheets"
 sass_dir = "sass"
 images_dir = "assets"
 javascripts_dir = "js"
-fonts_dir = "soundsofpolaris/assets/fonts"
+fonts_dir = "assets/fonts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
