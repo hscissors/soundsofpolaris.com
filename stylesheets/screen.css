@@ -155,7 +155,7 @@ header {
 /* line 77, ../sass/screen.sass */
 .post-wrapper .date-wrapper {
   position: absolute;
-  right: 50px;
+  right: 25px;
   top: 0;
   padding: 20px;
   background: rgba(0, 0, 0, 0.6);
